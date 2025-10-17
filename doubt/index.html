@@ -1,0 +1,1479 @@
+
+  <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ediify Concept: Personal Doubt-Solving Service</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+            line-height: 1.6;
+
+            color: #333;
+
+            background-color: #f8f9fa;
+
+        }
+
+        /* Navigation Bar */
+
+        .navbar {
+
+            background-color: #1e3a8a;
+
+            padding: 15px 20px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            color: white;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+        }
+
+        .navbar-left {
+
+            font-size: 18px;
+
+            font-weight: 600;
+
+        }
+
+        .navbar-right {
+
+            display: flex;
+
+            gap: 20px;
+
+            align-items: center;
+
+        }
+
+        .navbar-right a {
+
+            color: white;
+
+            text-decoration: none;
+
+            padding: 8px 16px;
+
+            border-radius: 5px;
+
+            transition: background-color 0.3s;
+
+        }
+
+        .navbar-right a:hover {
+
+            background-color: #2563eb;
+
+        }
+
+        .menu-toggle {
+
+            display: none;
+
+            background: none;
+
+            border: none;
+
+            color: white;
+
+            font-size: 24px;
+
+            cursor: pointer;
+
+        }
+
+        .mobile-menu {
+
+            display: none;
+
+            position: absolute;
+
+            top: 100%;
+
+            right: 20px;
+
+            background-color: #1e3a8a;
+
+            border-radius: 5px;
+
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+            min-width: 200px;
+
+            overflow: hidden;
+
+        }
+
+        .mobile-menu.active {
+
+            display: block;
+
+        }
+
+        .mobile-menu a {
+
+            display: block;
+
+            color: white;
+
+            text-decoration: none;
+
+            padding: 15px 20px;
+
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+
+            transition: background-color 0.3s;
+
+        }
+
+        .mobile-menu a:last-child {
+
+            border-bottom: none;
+
+        }
+
+        .mobile-menu a:hover {
+
+            background-color: #2563eb;
+
+        }
+
+        .container {
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            padding: 20px;
+
+        }
+
+        /* Hero Section */
+
+        .hero {
+
+            text-align: center;
+
+            padding: 60px 20px;
+
+            background-color: white;
+
+            border-radius: 10px;
+
+            margin-bottom: 40px;
+
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+        }
+
+        .logo {
+
+            width: 240px;
+
+            height: 160px;
+
+            margin: 0 auto 30px;
+
+            display: block;
+
+        }
+
+        .hero h1 {
+
+            color: #1e3a8a;
+
+            font-size: 32px;
+
+            margin-bottom: 10px;
+
+        }
+
+        .hero h2 {
+
+            color: #1e3a8a;
+
+            font-size: 24px;
+
+            margin-bottom: 20px;
+
+            font-weight: 600;
+
+        }
+
+        .hero p {
+
+            color: #666;
+
+            font-size: 16px;
+
+            max-width: 700px;
+
+            margin: 0 auto 30px;
+
+            line-height: 1.8;
+
+        }
+
+        .cta-button {
+    display: inline-block;
+    background-color: #fbbf24;
+    color: #1e3a8a;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: all 0.3s;
+    font-size: 16px;
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.cta-button:hover {
+    background-color: #f59e0b;
+    box-shadow: 0 0 30px rgba(251, 191, 36, 0.8);
+    transform: translateY(-2px);
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+    }
+    to {
+        box-shadow: 0 0 30px rgba(251, 191, 36, 0.8);
+    }
+      }
+
+        /* Section */
+
+        .section {
+
+            background-color: white;
+
+            padding: 60px 20px;
+
+            margin-bottom: 40px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+        }
+
+        .section h2 {
+
+            text-align: center;
+
+            color: #1e3a8a;
+
+            font-size: 32px;
+
+            margin-bottom: 50px;
+
+        }
+
+        .steps {
+
+            max-width: 800px;
+
+            margin: 0 auto;
+
+        }
+
+        .step {
+
+            margin-bottom: 40px;
+
+            display: flex;
+
+            gap: 20px;
+
+        }
+
+        .step-number {
+
+            flex-shrink: 0;
+
+            width: 40px;
+
+            height: 40px;
+
+            background-color: #1e3a8a;
+
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-weight: bold;
+
+            font-size: 18px;
+
+        }
+
+        .step-content h3 {
+
+            color: #1e3a8a;
+
+            font-size: 20px;
+
+            margin-bottom: 10px;
+
+        }
+
+        .step-content p {
+
+            color: #666;
+
+            line-height: 1.8;
+
+        }
+
+        /* Topics Section */
+
+        .topics-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+            gap: 40px;
+
+            max-width: 900px;
+
+            margin: 0 auto;
+
+        }
+
+        .topic-column h3 {
+
+            color: #1e3a8a;
+
+            font-size: 22px;
+
+            margin-bottom: 20px;
+
+            padding-bottom: 10px;
+
+            border-bottom: 2px solid #1e3a8a;
+
+        }
+
+        .topic-list {
+
+            list-style: none;
+
+        }
+
+        .topic-list li {
+    padding: 10px 0;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topic-list li .icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+      }
+
+        /* Note Box */
+
+        .note-box {
+
+            background-color: #fef3c7;
+
+            border-left: 4px solid #fbbf24;
+
+            padding: 20px;
+
+            margin: 40px auto;
+
+            max-width: 800px;
+
+            border-radius: 5px;
+
+        }
+
+        .note-box h4 {
+
+            color: #92400e;
+
+            margin-bottom: 15px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+        }
+
+        .note-box p {
+
+            color: #78350f;
+
+            margin-bottom: 10px;
+
+            line-height: 1.8;
+
+        }
+
+        .note-box .example {
+
+            font-style: italic;
+
+            margin-left: 20px;
+
+        }
+
+        /* General Guidance */
+
+        .guidance-section {
+
+            max-width: 800px;
+
+            margin: 40px auto 0;
+
+        }
+
+        .guidance-section h3 {
+
+            text-align: center;
+
+            color: #1e3a8a;
+
+            font-size: 24px;
+
+            margin-bottom: 20px;
+
+        }
+
+        .guidance-section p {
+
+            color: #666;
+
+            text-align: center;
+
+            margin-bottom: 20px;
+
+        }
+
+        .guidance-section ul {
+
+            list-style: none;
+
+            color: #666;
+
+        }
+
+        .guidance-section ul li {
+
+            padding: 8px 0;
+
+            padding-left: 20px;
+
+            position: relative;
+
+        }
+
+        .guidance-section ul li:before {
+
+            content: "•";
+
+            position: absolute;
+
+            left: 0;
+
+            color: #1e3a8a;
+
+            font-weight: bold;
+
+            font-size: 20px;
+
+        }
+
+        /* FAQ Section */
+
+        .faq-container {
+
+            max-width: 800px;
+
+            margin: 0 auto;
+
+        }
+
+        .faq-item {
+
+            margin-bottom: 15px;
+
+            border: 1px solid #e5e7eb;
+
+            border-radius: 8px;
+
+            overflow: hidden;
+
+            background-color: #f9fafb;
+
+        }
+
+        .faq-question {
+
+            width: 100%;
+
+            padding: 20px;
+
+            background-color: white;
+
+            border: none;
+
+            text-align: left;
+
+            cursor: pointer;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            font-size: 16px;
+
+            font-weight: 600;
+
+            color: #1e3a8a;
+
+            transition: background-color 0.3s;
+
+        }
+
+        .faq-question:hover {
+
+            background-color: #f3f4f6;
+
+        }
+
+        .faq-question .icon {
+
+            font-size: 20px;
+
+            transition: transform 0.3s;
+
+        }
+
+        .faq-question.active .icon {
+
+            transform: rotate(180deg);
+
+        }
+
+        .faq-answer {
+
+            max-height: 0;
+
+            overflow: hidden;
+
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+
+            padding: 0 20px;
+
+            background-color: white;
+
+        }
+
+        .faq-answer.active {
+
+            max-height: 500px;
+
+            padding: 20px;
+
+        }
+
+        .faq-answer p {
+
+            color: #666;
+
+            line-height: 1.8;
+
+            margin-bottom: 10px;
+
+        }
+
+        .faq-answer ul {
+
+            list-style: none;
+
+            padding-left: 0;
+
+            margin-top: 10px;
+
+        }
+
+        .faq-answer ul li {
+
+            padding: 5px 0;
+
+            padding-left: 20px;
+
+            position: relative;
+
+            color: #666;
+
+        }
+
+        .faq-answer ul li:before {
+
+            content: "•";
+
+            position: absolute;
+
+            left: 0;
+
+            color: #1e3a8a;
+
+            font-weight: bold;
+
+        }
+
+        /* CTA Section */
+
+        .cta-section {
+
+            text-align: center;
+
+            padding: 60px 20px;
+
+            background-color: white;
+
+            border-radius: 10px;
+
+            margin-bottom: 40px;
+
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+        }
+
+        .cta-section h2 {
+
+            color: #1e3a8a;
+
+            font-size: 32px;
+
+            margin-bottom: 15px;
+
+        }
+
+        .cta-section p {
+
+            color: #666;
+
+            margin-bottom: 30px;
+
+            font-size: 16px;
+
+        }
+
+        /* Footer */
+
+        .footer {
+
+            background-color: #1e3a8a;
+
+            color: white;
+
+            padding: 40px 20px 20px;
+
+            text-align: center;
+
+        }
+
+        .footer h3 {
+
+            font-size: 24px;
+
+            margin-bottom: 15px;
+
+        }
+
+        .footer p {
+
+            margin-bottom: 25px;
+
+            color: #e0e7ff;
+
+        }
+
+        .social-links {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 30px;
+
+            margin-bottom: 30px;
+
+        }
+
+        .social-links a {
+
+            color: white;
+
+            font-size: 32px;
+
+            transition: opacity 0.3s;
+
+            text-decoration: none;
+
+        }
+
+        .social-links a:hover {
+
+            opacity: 0.7;
+
+        }
+
+        .copyright {
+
+            color: #e0e7ff;
+
+            font-size: 14px;
+
+            padding-top: 20px;
+
+            border-top: 1px solid rgba(255,255,255,0.2);
+
+        }
+
+        /* Responsive */
+
+        @media (max-width: 768px) {
+
+            .hero h1 {
+
+                font-size: 24px;
+
+            }
+
+            .hero h2 {
+
+                font-size: 20px;
+
+            }
+
+            .section h2 {
+
+                font-size: 24px;
+
+            }
+
+            .topics-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .navbar-right {
+
+                display: none;
+
+            }
+
+            .menu-toggle {
+
+                display: block;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar">
+
+        <div class="navbar-left">Personal Doubt–Solving Service</div>
+
+        <div class="navbar-right">
+
+            <a href="#how-it-works">About this Service</a>
+
+            <a href="#faq">FAQ's</a>
+
+            <a href="/">Back to Home</a>
+
+        </div>
+
+        <button class="menu-toggle" onclick="toggleMenu()">
+
+            <i class="fas fa-bars"></i>
+
+        </button>
+
+        <div class="mobile-menu" id="mobileMenu">
+
+            <a href="#how-it-works" onclick="toggleMenu()">About this Service</a>
+
+            <a href="#faq" onclick="toggleMenu()">FAQ's</a>
+
+            <a href="/" onclick="toggleMenu()">Back to Home</a>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <!-- Hero Section -->
+
+        <section class="hero">
+
+            <img src="https://i.postimg.cc/WztPTzPt/20250405-180351.png" alt="Ediify Concept Logo" class="logo">
+
+            <h1>Ediify Concept:</h1>
+
+            <h2>Personal Doubt–Solving Service</h2>
+
+            <p>Ask your study or strategy doubts directly from the Ediify Concept Team — guiding ICSE & ISC students to clarity and excellence.</p>
+
+            <a href="https://wa.me/919149118493?text=Hi%20I%20would%20like%20to%20utilize%20the%20Personal%20Doubt%E2%80%93Solving%20Service" class="cta-button">Ask Your Doubt Now – ₹29 per Question</a>
+
+        </section>
+
+        <!-- How It Works Section -->
+
+        <section class="section" id="how-it-works">
+
+            <h2>How It Works</h2>
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <div class="step-number">1</div>
+
+                    <div class="step-content">
+
+                        <h3>Message Us Directly on WhatsApp</h3>
+
+                        <p>Click the "Ask Your Doubt Now" button at the top or bottom of this page. It will take you straight to our official WhatsApp Business account.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="step">
+
+                    <div class="step-number">2</div>
+
+                    <div class="step-content">
+
+                        <h3>Send Your Question</h3>
+
+                        <p>Once on WhatsApp, simply message your specific doubt — it can be a subject-based concept or a general study/strategy query.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="step">
+
+                    <div class="step-number">3</div>
+
+                    <div class="step-content">
+
+                        <h3>Make Payment via UPI</h3>
+
+                        <p>Our team will guide you through the quick UPI payment process — ₹29 per question. Once the payment is confirmed, your query will be queued for response.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="step">
+
+                    <div class="step-number">4</div>
+
+                    <div class="step-content">
+
+                        <h3>Get Your Solution Within 1 Hour</h3>
+
+                        <p>You'll receive a clear, detailed, and simplified explanation via chat on WhatsApp within 1 hour (during working hours).</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Topics Section -->
+
+        <section class="section">
+
+            <h2>Topics You Can Ask About</h2>
+
+            <div class="topics-grid">
+
+                <div class="topic-column">
+
+                  <h3>ICSE Class 10</h3>
+                  <ul class="topic-list">
+    <li>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 19.5C4 18.837 4.26339 18.2011 4.73223 17.7322C5.20107 17.2634 5.83696 17 6.5 17H20" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.5 2H20V22H6.5C5.83696 22 5.20107 21.7366 4.73223 21.2678C4.26339 20.7989 4 20.163 4 19.5V4.5C4 3.83696 4.26339 3.20107 4.73223 2.73223C5.20107 2.26339 5.83696 2 6.5 2Z" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        English Language
+    </li>
+    <li>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 17L12 22L22 17" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12L12 17L22 12" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        History & Civics
+    </li>
+    <li>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="#1e3a8a" stroke-width="2"/>
+            <path d="M2 12H22" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round"/>
+            <path d="M12 2C14.5 4.5 16 8 16 12C16 16 14.5 19.5 12 22" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round"/>
+            <path d="M12 2C9.5 4.5 8 8 8 12C8 16 9.5 19.5 12 22" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        Geography
+    </li>
+    <li>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="#1e3a8a" stroke-width="2"/>
+            <path d="M12 8V12L15 15" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        Physics
+    </li>
+    <li>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 2L6 6H3L6 11L3 16H6L9 20L12 16H15L12 11L15 6H12L9 2Z" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Chemistry
+    </li>
+    <li>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18H19C20.1046 18 21 17.1046 21 16Z" stroke="#1e3a8a" stroke-width="2"/>
+            <path d="M7 10H7.01" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round"/>
+            <path d="M17 14H17.01" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        Biology
+    </li>
+    <li>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="3" width="18" height="18" rx="2" stroke="#1e3a8a" stroke-width="2"/>
+            <path d="M8 12H16" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round"/>
+            <path d="M12 8V16" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        Mathematics
+    </li>
+    <li>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 22V12H15V22" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Home Science
+    </li>
+                  </ul>
+
+                </div>
+
+                <div class="topic-column">
+
+                    <h3>ISC Class 12</h3>
+
+                    <ul class="topic-list">
+    <li>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 19.5C4 18.837 4.26339 18.2011 4.73223 17.7322C5.20107 17.2634 5.83696 17 6.5 17H20" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.5 2H20V22H6.5C5.83696 22 5.20107 21.7366 4.73223 21.2678C4.26339 20.7989 4 20.163 4 19.5V4.5C4 3.83696 4.26339 3.20107 4.73223 2.73223C5.20107 2.26339 5.83696 2 6.5 2Z" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        English Language
+    </li>
+    <li>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 19.5C4 18.837 4.26339 18.2011 4.73223 17.7322C5.20107 17.2634 5.83696 17 6.5 17H20" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.5 2H20V22H6.5C5.83696 22 5.20107 21.7366 4.73223 21.2678C4.26339 20.7989 4 20.163 4 19.5V4.5C4 3.83696 4.26339 3.20107 4.73223 2.73223C5.20107 2.26339 5.83696 2 6.5 2Z" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        English Literature
+    </li>
+    <li>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="3" width="18" height="18" rx="2" stroke="#1e3a8a" stroke-width="2"/>
+            <path d="M9 3V21" stroke="#1e3a8a" stroke-width="2"/>
+            <path d="M15 3V21" stroke="#1e3a8a" stroke-width="2"/>
+        </svg>
+        Political Science
+    </li>
+    <li>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 17L12 22L22 17" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12L12 17L22 12" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        History
+    </li>
+    <li>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="3" stroke="#1e3a8a" stroke-width="2"/>
+            <path d="M12 2C12 2 9 8 9 12C9 14.2091 10.3431 16 12 16C13.6569 16 15 14.2091 15 12C15 8 12 2 12 2Z" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 16V22" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="10" stroke="#1e3a8a" stroke-width="2"/>
+        </svg>
+        Psychology
+    </li>
+                  </ul>
+
+                </div>
+
+            </div>
+
+            <div class="note-box">
+
+                <h4>💡 Note:</h4>
+
+                <p>Each question must focus on one specific doubt or concept — for example:</p>
+
+                <p class="example">"Can you explain the difference between a Flexible and a Rigid Constitution in simple terms?"</p>
+
+                <p>(not something broad like "Explain the entire Constitution chapter.")</p>
+
+                <p>This ensures you get clear, concise, and focused explanations that truly help you understand the concept better.</p>
+
+            </div>
+
+            <div class="guidance-section">
+
+                <h3>General Guidance (For All Students)</h3>
+
+                <p>You can also ask non-academic or strategy-related questions, such as:</p>
+
+                <ul>
+
+                    <li>Study planning and study strategies</li>
+
+                    <li>Time management strategies</li>
+
+                    <li>Answer-framing and presentation guidance</li>
+
+                    <li>Subject-specific strategy (for the subjects listed above)</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- FAQ Section -->
+
+        <section class="section" id="faq">
+
+            <h2>Frequently Asked Questions (FAQ)</h2>
+
+            <div class="faq-container">
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFaq(this)">
+
+                        <span>1. What is Ediify Concept's Personal Doubt–Solving Service?</span>
+
+                        <span class="icon">+</span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>It's a WhatsApp-based academic support system where students can ask their specific subject-related or study/strategy doubts and receive clear, simplified explanations directly from the Ediify Concept Team.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFaq(this)">
+
+                        <span>2. Who can use this service?</span>
+
+                        <span class="icon">+</span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>This service is specially designed for ICSE and ISC students (Classes 9–12) who want fast, reliable, and concept-focused academic guidance.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFaq(this)">
+
+                        <span>3. How do I ask my question?</span>
+
+                        <span class="icon">+</span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>Click the "Ask Your Doubt Now" button on this page — it will open our official WhatsApp Business account. Send your specific doubt as a message (one concept or question at a time).</p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFaq(this)">
+
+                        <span>4. How much does it cost?</span>
+
+                        <span class="icon">+</span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>Each question costs ₹29, payable directly via UPI on WhatsApp. This small one-time fee covers a detailed, personally written solution for that particular doubt.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFaq(this)">
+
+                        <span>5. How long will it take to get my reply?</span>
+
+                        <span class="icon">+</span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>You'll receive your solution within 1 hour (during working hours). For questions sent late at night, the reply will be provided the next morning.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFaq(this)">
+
+                        <span>6. What kind of questions can I ask?</span>
+
+                        <span class="icon">+</span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>You can ask:</p>
+
+                        <ul>
+
+                            <li>Subject-based doubts from ICSE/ISC subjects — English, History & Civics, Geography, Political Science, Psychology, etc.</li>
+
+                            <li>General academic or strategy-related queries, such as study planning, time management, or answer presentation techniques.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFaq(this)">
+
+                        <span>7. Can I ask multiple questions?</span>
+
+                        <span class="icon">+</span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>Yes. Once connected on WhatsApp, you can continue asking new questions anytime. Each additional question will be charged separately at ₹29, payable via UPI in the same chat.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFaq(this)">
+
+                        <span>8. How will I receive my solution?</span>
+
+                        <span class="icon">+</span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>All answers are sent via chat on WhatsApp in simple, clear language — formatted to help you understand the concept instantly.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFaq(this)">
+
+                        <span>9. Who provides the answers?</span>
+
+                        <span class="icon">+</span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>All explanations are created by the Ediify Concept academic team, under the guidance of Jasman Anand (Founder of Ediify Concept) to ensure accuracy and conceptual clarity.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFaq(this)">
+
+                        <span>10. What if I face any issue or don't receive my solution?</span>
+
+                        <span class="icon">+</span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>If you ever face a delay or technical issue, simply message again on WhatsApp or email us at edifyconcept06@gmail.com — our team will resolve it promptly.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Final CTA Section -->
+
+        <section class="cta-section">
+
+            <h2>Get Personalized Mentorship Now</h2>
+
+            <p>Each doubt is solved personally via chat on WhatsApp.</p>
+
+            <a href="https://wa.me/919149118493?text=Hi%20I%20would%20like%20to%20utilize%20the%20Personal%20Doubt%E2%80%93Solving%20Service" class="cta-button">Ask Your Doubt Now – ₹29 per Question</a>
+
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <h3>Explore More with Ediify Concept</h3>
+
+        <p>Follow us on social media for the latest updates and educational content.</p>
+
+        <div class="social-links">
+
+            <a href="https://youtube.com/@EdiifyConcept" target="_blank" aria-label="YouTube">
+
+                <i class="fab fa-youtube"></i>
+
+            </a>
+
+            <a href="https://instagram.com/ediify.concept" target="_blank" aria-label="Instagram">
+
+                <i class="fab fa-instagram"></i>
+
+            </a>
+
+            <a href="https://linkedin.com/company/ediifyconcept" target="_blank" aria-label="LinkedIn">
+
+                <i class="fab fa-linkedin"></i>
+
+            </a>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2025 Ediify Concept. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+    <script>
+
+        function toggleMenu() {
+
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            mobileMenu.classList.toggle('active');
+
+        }
+
+        function toggleFaq(button) {
+
+            const answer = button.nextElementSibling;
+
+            const allQuestions = document.querySelectorAll('.faq-question');
+
+            const allAnswers = document.querySelectorAll('.faq-answer');
+
+            
+
+            // Close all other FAQs
+
+            allQuestions.forEach(q => {
+
+                if (q !== button) {
+
+                    q.classList.remove('active');
+
+                }
+
+            });
+
+            allAnswers.forEach(a => {
+
+                if (a !== answer) {
+
+                    a.classList.remove('active');
+
+                }
+
+            });
+
+            
+
+            // Toggle current FAQ
+
+            button.classList.toggle('active');
+
+            answer.classList.toggle('active');
+
+        }
+
+        // Close mobile menu when clicking outside
+
+        document.addEventListener('click', function(event) {
+
+            const navbar = document.querySelector('.navbar');
+
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            const menuToggle = document.querySelector('.menu-toggle');
+
+            
+
+            if (!navbar.contains(event.target) && mobileMenu.classList.contains('active')) {
+
+                mobileMenu.classList.remove('active');
+
+            }
+
+        });
+
+        // Smooth scroll for anchor links
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+            anchor.addEventListener('click', function (e) {
+
+                const href = this.getAttribute('href');
+
+                if (href !== '#') {
+
+                    e.preventDefault();
+
+                    const target = document.querySelector(href);
+
+                    if (target) {
+
+                        target.scrollIntoView({
+
+                            behavior: 'smooth',
+
+                            block: 'start'
+
+                        });
+
+                    }
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
