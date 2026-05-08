@@ -1011,6 +1011,12 @@
         html {
             scroll-behavior: smooth;
         }
+
+        @media (max-width: 768px) {
+    .ecosystem-video {
+        max-width: 100% !important;
+    }
+        }
     </style>
 </head>
 <body>
@@ -1157,7 +1163,7 @@
     <p style="color: #ccc; font-size: 0.95rem; margin-bottom: 1.5rem;">Watch how our complete academic system helps you learn, plan, and improve throughout the year.</p>
 
     <!-- Video Card -->
-<div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: 2rem; max-width: 640px; margin: 0 auto 1rem; box-shadow: 0 8px 24px rgba(0,0,0,0.4);">
+<div class="ecosystem-video" style="max-width: 640px; margin: 0 auto 1rem;">
     <iframe width="100%" style="aspect-ratio: 16/9; border-radius: 10px; border: none; display: block;"
     src="https://www.youtube.com/embed/8eT186nnSFY"
     allowfullscreen></iframe>
