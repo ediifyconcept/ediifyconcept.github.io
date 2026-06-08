@@ -231,7 +231,7 @@
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-        .founder-name {
+       .founder-name {
     text-align: center;
     font-weight: bold;
     color: #1e3a5f;
@@ -536,7 +536,7 @@
         /* Testimonials */
         .testimonials {
             padding: 4rem 2rem;
-            background: white;
+            background: #f0f4f8;
         }
 
         .testimonials h2 {
@@ -554,7 +554,7 @@
         }
 
         .testimonial-card {
-            background: #f8f9fa;
+            background: white;
             padding: 2rem;
             border-radius: 10px;
             margin-bottom: 2rem;
@@ -585,7 +585,7 @@
         }
 
         .feedback-card {
-            background: #f8f9fa;
+            background: white;
             padding: 1.5rem;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -670,7 +670,7 @@
         /* Milestones */
         .milestones {
             padding: 4rem 2rem;
-            background: #f0f4f8;
+            background: white;
         }
 
         .milestones h2 {
@@ -782,18 +782,20 @@
         /* CTA Section */
         .cta {
             padding: 4rem 2rem;
-            background: #1e3a5f;
-            color: white;
+            background: #f0f4f8;
+            color: #1e3a5f;
             text-align: center;
         }
 
         .cta h2 {
             font-size: 2rem;
             margin-bottom: 1rem;
+            color: #1e3a5f;
         }
 
         .cta p {
             margin-bottom: 2rem;
+            color: #555;
         }
 
         .cta-buttons {
@@ -804,8 +806,8 @@
         }
 
         .cta-btn {
-            background: white;
-            color: #1e3a5f;
+            background: #b71c1c;
+            color: white;
             padding: 1rem 2rem;
             border: none;
             border-radius: 5px;
@@ -821,6 +823,7 @@
 
         .cta-btn:hover {
             transform: translateY(-2px);
+            background: #8b0000;
         }
 
         .cta-icon {
@@ -831,7 +834,7 @@
         /* Telegram Section */
         .telegram {
             padding: 3rem 2rem;
-            background: #e3f2fd;
+            background: white;
             text-align: center;
         }
 
@@ -868,7 +871,7 @@
         /* Contact Section */
         .contact {
             padding: 3rem 2rem;
-            background: white;
+            background: #f0f4f8;
             text-align: center;
         }
 
@@ -1020,11 +1023,20 @@
             scroll-behavior: smooth;
         }
 
-        @media (max-width: 768px) {
+       @media (max-width: 768px) {
     .ecosystem-video {
         max-width: 100% !important;
     }
-        }
+}
+
+      @media (max-width: 768px) {
+    .mission-row-1 {
+        grid-template-columns: 1fr !important;
+    }
+    .mission-row-2 > div {
+        width: 100% !important;
+    }
+}
     </style>
 </head>
 <body>
@@ -1079,7 +1091,7 @@
     <span class="founder-designation">
         Founder, Educator & Author
     </span>
-            </p>
+</p>
             <p>Meet Jasman Anand — an educator and author driven by a single mission: to make learning simpler, smarter, and more accessible for every student.</p>
             <p>Having personally experienced the challenges of ICSE and ISC preparation, Jasman founded Ediify Concept with a clear vision — to simplify complex concepts, remove academic overwhelm, and empower students to reach their full potential with confidence.</p>
             <p>He believes that education shouldn't feel like a burden — it should be a bridge to discovery, clarity, and excellence.</p>
@@ -1136,6 +1148,44 @@
 </div>
     </section>
 
+     <!-- Mission & Commitment Section -->
+<section style="padding: 4rem 2rem; background: white;">
+    <h2 style="text-align: center; font-size: 2.5rem; color: #1e3a5f; margin-bottom: 0.75rem;">Our Mission & Commitment</h2>
+    <p style="text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 3rem;">The principles that guide everything we create at Ediify Concept.</p>
+    
+    <div style="max-width: 1100px; margin: 0 auto;">
+    <div class="mission-row-1" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 1.5rem;">
+        <div style="background: #f0f4f8; border-radius: 12px; padding: 1.8rem; text-align: center; border-top: 4px solid #1e3a5f; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+            <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">🎯</div>
+            <h3 style="color: #1e3a5f; margin-bottom: 0.75rem; font-size: 1.15rem;">Quality</h3>
+            <p style="color: #555; font-size: 0.95rem; line-height: 1.7;">Providing accurate, well-researched, exam-oriented, and professionally designed learning resources.</p>
+        </div>
+        <div style="background: #f0f4f8; border-radius: 12px; padding: 1.8rem; text-align: center; border-top: 4px solid #1e3a5f; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+            <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">🌐</div>
+            <h3 style="color: #1e3a5f; margin-bottom: 0.75rem; font-size: 1.15rem;">Accessibility</h3>
+            <p style="color: #555; font-size: 0.95rem; line-height: 1.7;">Making learning available anytime, anywhere through digital tools, E-Books, courses, videos, and future technologies.</p>
+        </div>
+        <div style="background: #f0f4f8; border-radius: 12px; padding: 1.8rem; text-align: center; border-top: 4px solid #1e3a5f; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+            <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">💰</div>
+            <h3 style="color: #1e3a5f; margin-bottom: 0.75rem; font-size: 1.15rem;">Affordability</h3>
+            <p style="color: #555; font-size: 0.95rem; line-height: 1.7;">Reducing financial barriers so quality education remains within reach of every student.</p>
+        </div>
+        <div style="background: #f0f4f8; border-radius: 12px; padding: 1.8rem; text-align: center; border-top: 4px solid #1e3a5f; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+            <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">💡</div>
+            <h3 style="color: #1e3a5f; margin-bottom: 0.75rem; font-size: 1.15rem;">Innovation</h3>
+            <p style="color: #555; font-size: 0.95rem; line-height: 1.7;">Leveraging technology, digital publishing, AI tools and modern educational methods to improve learning experiences.</p>
+        </div>
+    </div>
+    <div class="mission-row-2" style="display: flex; justify-content: center;">
+        <div style="background: #f0f4f8; border-radius: 12px; padding: 1.8rem; text-align: center; border-top: 4px solid #b71c1c; transition: transform 0.3s; width: calc(25% - 0.75rem);" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+            <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">🏆</div>
+            <h3 style="color: #b71c1c; margin-bottom: 0.75rem; font-size: 1.15rem;">Student Success</h3>
+            <p style="color: #555; font-size: 0.95rem; line-height: 1.7;">Focusing not merely on content delivery but on helping students achieve better academic outcomes, higher scores, and stronger conceptual understanding.</p>
+        </div>
+    </div>
+</div>
+</section>
+
     <!-- The Ediify Concept Ecosystem Section -->
     <section style="padding: 4rem 2rem; background: #1e3a5f; color: white;">
     <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem;">The Ediify Concept Ecosystem</h2>
@@ -1189,7 +1239,6 @@
         Ready to get started? Explore the resources below →
     </a>
 </div>
-        
     </div>
 </section>
 
@@ -1241,7 +1290,7 @@
                         <rect x="32" y="35" width="8" height="13" fill="#ffc107"/>
                         <rect x="42" y="40" width="8" height="8" fill="#9c27b0"/>
                     </svg>
-                </div>
+                    </div>
                 <h3>Ediify Nexus</h3>
                 <p>Automated calculators, planners, and smart trackers.</p>
                 <a href="https://ediifynexus.github.io/" target="_blank" class="offering-btn">Explore Ediify Nexus</a>
@@ -1282,6 +1331,54 @@
                 <div>
                     <strong>Created by someone who's been in your shoes</strong> — and won.
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Growth & Evolution of Ediify Concept Section -->
+    <section class="milestones">
+        <h2>Growth & Evolution of Ediify Concept</h2>
+        <div class="milestones-grid">
+           <div class="milestone-card">
+                <div class="milestone-icon">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="12" y="8" width="40" height="48" rx="2" fill="#1e3a5f"/>
+                        <rect x="16" y="16" width="32" height="2" fill="white"/>
+                        <rect x="16" y="22" width="32" height="2" fill="white"/>
+                        <rect x="16" y="28" width="24" height="2" fill="white"/>
+                        <path d="M20 40 L28 48 L44 32" stroke="#4caf50" stroke-width="3" fill="none"/>
+                    </svg>
+                </div>
+                <h3>Published Academic Textbooks</h3>
+                <p>Built the foundation of simplified learning for ICSE/ISC students.</p>
+            </div>
+            <div class="milestone-card">
+                <div class="milestone-icon">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="4" y="16" width="56" height="32" rx="6" fill="#ff0000"/>
+    <path d="M26 24 L26 40 L42 32 Z" fill="white"/>
+</svg>
+                </div>
+                <h3>350k+ Views on YouTube</h3>
+                <p>Achieved a significant reach, helping students across the nation.</p>
+            </div>
+            <div class="milestone-card">
+                <div class="milestone-icon">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8" y="16" width="48" height="40" rx="2" fill="#1e3a5f"/>
+                        <circle cx="16" cy="24" r="2" fill="#ff5722"/>
+                        <circle cx="24" cy="24" r="2" fill="#ff5722"/>
+                        <circle cx="32" cy="24" r="2" fill="#ff5722"/>
+                        <circle cx="40" cy="24" r="2" fill="#ff5722"/>
+                        <circle cx="48" cy="24" r="2" fill="#ff5722"/>
+                        <rect x="12" y="32" width="8" height="16" fill="#4caf50"/>
+                        <rect x="22" y="38" width="8" height="10" fill="#2196f3"/>
+                        <rect x="32" y="35" width="8" height="13" fill="#ffc107"/>
+                        <rect x="42" y="40" width="8" height="8" fill="#9c27b0"/>
+                    </svg>
+                </div>
+                <h3>Launched Ediify Nexus</h3>
+                <p>Designed the first-ever Personal Study Automation Hub for Students.</p>
             </div>
         </div>
     </section>
@@ -1355,54 +1452,6 @@
 </div>
     </section>
 
-    <!-- Growth & Evolution of Ediify Concept Section -->
-    <section class="milestones">
-        <h2>Growth & Evolution of Ediify Concept</h2>
-        <div class="milestones-grid">
-           <div class="milestone-card">
-                <div class="milestone-icon">
-                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="12" y="8" width="40" height="48" rx="2" fill="#1e3a5f"/>
-                        <rect x="16" y="16" width="32" height="2" fill="white"/>
-                        <rect x="16" y="22" width="32" height="2" fill="white"/>
-                        <rect x="16" y="28" width="24" height="2" fill="white"/>
-                        <path d="M20 40 L28 48 L44 32" stroke="#4caf50" stroke-width="3" fill="none"/>
-                    </svg>
-                </div>
-                <h3>Published Academic Textbooks</h3>
-                <p>Built the foundation of simplified learning for ICSE/ISC students.</p>
-            </div>
-            <div class="milestone-card">
-                <div class="milestone-icon">
-                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="4" y="16" width="56" height="32" rx="6" fill="#ff0000"/>
-    <path d="M26 24 L26 40 L42 32 Z" fill="white"/>
-</svg>
-                </div>
-                <h3>350k+ Views on YouTube</h3>
-                <p>Achieved a significant reach, helping students across the nation.</p>
-            </div>
-            <div class="milestone-card">
-                <div class="milestone-icon">
-                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="8" y="16" width="48" height="40" rx="2" fill="#1e3a5f"/>
-                        <circle cx="16" cy="24" r="2" fill="#ff5722"/>
-                        <circle cx="24" cy="24" r="2" fill="#ff5722"/>
-                        <circle cx="32" cy="24" r="2" fill="#ff5722"/>
-                        <circle cx="40" cy="24" r="2" fill="#ff5722"/>
-                        <circle cx="48" cy="24" r="2" fill="#ff5722"/>
-                        <rect x="12" y="32" width="8" height="16" fill="#4caf50"/>
-                        <rect x="22" y="38" width="8" height="10" fill="#2196f3"/>
-                        <rect x="32" y="35" width="8" height="13" fill="#ffc107"/>
-                        <rect x="42" y="40" width="8" height="8" fill="#9c27b0"/>
-                    </svg>
-                </div>
-                <h3>Launched Ediify Nexus</h3>
-                <p>Designed the first-ever Personal Study Automation Hub for Students.</p>
-            </div>
-        </div>
-    </section>
-
     <!-- FAQ Section -->
     <section class="faq" id="faq">
         <h2>Frequently Asked Questions (FAQ's)</h2>
@@ -1415,6 +1464,18 @@
                 <div class="faq-answer">
                     <div class="faq-answer-content">
                         Ediify Concept is an EdTech platform founded in 2023 by Jasman Anand to simplify ICSE and ISC learning through a structured academic ecosystem. It integrates study material, planning tools, and personalized support to help students achieve better results with less stress.
+                    </div>
+                </div>
+            </div>
+
+             <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>What makes Ediify Concept different from other educational platforms?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Unlike standalone books, videos, or study tools, Ediify Concept is designed as an integrated academic ecosystem. Our publications, Ediify Nexus, and personalized support services work together to help students learn concepts, manage their studies, and overcome challenges through a single structured system.
                     </div>
                 </div>
             </div>
@@ -1563,36 +1624,36 @@
             <a href="bookstore/" class="cta-btn">
                 <svg class="cta-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="12" y="8" width="40" height="48" rx="2" fill="currentColor"/>
-                    <rect x="16" y="16" width="32" height="2" fill="white"/>
-                    <rect x="16" y="22" width="32" height="2" fill="white"/>
-                    <rect x="16" y="28" width="24" height="2" fill="white"/>
-                    <path d="M20 40 L28 48 L44 32" stroke="white" stroke-width="3" fill="none"/>
+                    <rect x="16" y="16" width="32" height="2" fill="#b71c1c"/>
+<rect x="16" y="22" width="32" height="2" fill="#b71c1c"/>
+<rect x="16" y="28" width="24" height="2" fill="#b71c1c"/>
+<path d="M20 40 L28 48 L44 32" stroke="#b71c1c" stroke-width="3" fill="none"/>
                 </svg>
                 Publications
             </a>
             <a href="doubt/" class="cta-btn">
                 <svg class="cta-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="32" cy="20" r="12" fill="currentColor"/>
-                    <path d="M32 28 L28 38 L32 36 L36 38 Z" fill="currentColor"/>
-                    <path d="M16 44 Q32 36 48 44" stroke="currentColor" stroke-width="3" fill="none"/>
-                    <circle cx="24" cy="50" r="3" fill="currentColor"/>
-                    <circle cx="32" cy="48" r="3" fill="currentColor"/>
-                    <circle cx="40" cy="50" r="3" fill="currentColor"/>
-                </svg>
+    <circle cx="32" cy="20" r="12" fill="white"/>
+    <path d="M32 28 L28 38 L32 36 L36 38 Z" fill="white"/>
+    <path d="M16 44 Q32 36 48 44" stroke="white" stroke-width="3" fill="none"/>
+    <circle cx="24" cy="50" r="3" fill="white"/>
+    <circle cx="32" cy="48" r="3" fill="white"/>
+    <circle cx="40" cy="50" r="3" fill="white"/>
+</svg>
                 Personal Doubt-Solving Service
             </a>
             <a href="https://ediifynexus.github.io/" target="_blank" class="cta-btn">
                 <svg class="cta-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="8" y="16" width="48" height="40" rx="2" fill="currentColor"/>
-                    <circle cx="16" cy="24" r="2" fill="white"/>
-                    <circle cx="24" cy="24" r="2" fill="white"/>
-                    <circle cx="32" cy="24" r="2" fill="white"/>
-                    <circle cx="40" cy="24" r="2" fill="white"/>
-                    <circle cx="48" cy="24" r="2" fill="white"/>
-                    <rect x="12" y="32" width="8" height="16" fill="white"/>
-                    <rect x="22" y="38" width="8" height="10" fill="white"/>
-                    <rect x="32" y="35" width="8" height="13" fill="white"/>
-                    <rect x="42" y="40" width="8" height="8" fill="white"/>
+                    <circle cx="16" cy="24" r="2" fill="#b71c1c"/>
+<circle cx="24" cy="24" r="2" fill="#b71c1c"/>
+<circle cx="32" cy="24" r="2" fill="#b71c1c"/>
+<circle cx="40" cy="24" r="2" fill="#b71c1c"/>
+<circle cx="48" cy="24" r="2" fill="#b71c1c"/>
+<rect x="12" y="32" width="8" height="16" fill="#b71c1c"/>
+<rect x="22" y="38" width="8" height="10" fill="#b71c1c"/>
+<rect x="32" y="35" width="8" height="13" fill="#b71c1c"/>
+<rect x="42" y="40" width="8" height="8" fill="#b71c1c"/>
                 </svg>
                 Ediify Nexus
             </a>
