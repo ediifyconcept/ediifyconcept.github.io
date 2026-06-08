@@ -241,22 +241,6 @@
             margin: 0 auto 1rem;
         }
 
-        .video-card .video-placeholder {
-            background: #f0f4f8;
-            border-radius: 10px;
-            width: 100%;
-            aspect-ratio: 16/9;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .video-card .video-placeholder p {
-            color: #1e3a5f;
-            font-size: 1.1rem;
-            font-weight: bold;
-        }
-
         .video-caption {
             color: #888;
             font-size: 0.88rem;
@@ -444,10 +428,10 @@
         }
 
         .guidance-section .trust-icon {
-            color: #4caf50;
-            font-size: 1.3rem;
-            flex-shrink: 0;
-        }
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
 
         /* --- FAQ (identical to home page) --- */
         .faq-container {
@@ -607,13 +591,6 @@
     font-size: 0.9rem;
 }
 
-      .footer {
-    padding: 3rem 2rem 2rem;
-    background: #1e3a5f;
-    color: white;
-    text-align: center;
-}
-
         /* --- Responsive --- */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
@@ -709,7 +686,7 @@
         <h2>Personal Doubt–Solving Service</h2>
         <p>Ask your study or strategy doubts directly from the Ediify Concept Team — guiding ICSE &amp; ISC students to clarity and excellence.</p>
         <p class="subtitle">A support service within the Ediify Concept Ecosystem.</p>
-        <a href="https://wa.me/919149118493?text=Hi%20I%20would%20like%20to%20utilize%20the%20Personal%20Doubt%E2%80%93Solving%20Service" class="offering-btn">Ask Your Doubt Now – ₹29 per Question</a>
+        <a href="https://wa.me/919149118493?text=Hi%2C%20I%20would%20like%20to%20utilize%20the%20Personal%20Doubt%E2%80%93Solving%20Service" class="offering-btn">Ask Your Doubt Now – ₹29 per Question</a>
     </section>
 
     <!-- Video Section -->
@@ -748,7 +725,7 @@
                 <div class="step-content">
                     <h3>Send Your Question</h3>
                     <p>Once on WhatsApp, simply message your specific doubt — it can be a subject-based concept or a general study/strategy query.</p>
-  </div>
+                </div>
             </div>
             <div class="step">
                 <div class="step-number">3</div>
@@ -760,7 +737,7 @@
             <div class="step">
                 <div class="step-number">4</div>
                 <div class="step-content">
-                    <h3>Get Your Solution Within 1 Hour</h3>
+                     <h3>Get Your Solution Within 1 Hour</h3>
                     <p>You'll receive a clear, detailed, and simplified explanation via chat on WhatsApp within 1 hour (during working hours).</p>
                 </div>
             </div>
@@ -910,19 +887,39 @@
                 <h3>General Guidance (For All Students)</h3>
                 <p>You can also ask non-academic or strategy-related questions, such as:</p>
                 <div class="trust-item">
-                    <span class="trust-icon">✓</span>
+                    <div class="trust-icon">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+        <path d="M7 12l3.5 3.5L17 8" stroke="#4caf50" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</div>
                     <div>Study planning and study strategies</div>
                 </div>
                 <div class="trust-item">
-                    <span class="trust-icon">✓</span>
+                    <div class="trust-icon">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+        <path d="M7 12l3.5 3.5L17 8" stroke="#4caf50" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</div>
                     <div>Time management strategies</div>
                 </div>
                 <div class="trust-item">
-                    <span class="trust-icon">✓</span>
+                    <div class="trust-icon">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+        <path d="M7 12l3.5 3.5L17 8" stroke="#4caf50" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</div>
                     <div>Answer-framing and presentation guidance</div>
                 </div>
                 <div class="trust-item">
-                    <span class="trust-icon">✓</span>
+                    <div class="trust-icon">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+        <path d="M7 12l3.5 3.5L17 8" stroke="#4caf50" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</div>
                     <div>Subject-specific strategy (for the subjects listed above)</div>
                 </div>
             </div>
@@ -1022,7 +1019,7 @@
 
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFAQ(this)">
-                  <h3>How will I receive my solution?</h3>
+                    <h3>How will I receive my solution?</h3>
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
@@ -1076,7 +1073,7 @@
     <section class="cta">
         <h2>🚀 Get Personalized Mentorship Now</h2>
         <p>Each doubt is solved personally via chat on WhatsApp.</p>
-        <a href="https://wa.me/919149118493?text=Hi%20I%20would%20like%20to%20utilize%20the%20Personal%20Doubt%E2%80%93Solving%20Service" class="cta-btn">Ask Your Doubt Now – ₹29 per Question</a>
+        <a href="https://wa.me/919149118493?text=Hi%2C%20I%20would%20like%20to%20utilize%20the%20Personal%20Doubt%E2%80%93Solving%20Service" class="cta-btn">Ask Your Doubt Now – ₹29 per Question</a>
     </section>
 
     <!-- Footer -->
