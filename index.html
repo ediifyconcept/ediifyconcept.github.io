@@ -103,28 +103,6 @@
             transition: 0.3s;
         }
 
-        @media (max-width: 768px) {
-            .navbar-menu {
-                position: fixed;
-                top: 60px;
-                right: -100%;
-                flex-direction: column;
-                background: #1e3a5f;
-                width: 250px;
-                padding: 2rem;
-                transition: right 0.3s;
-                box-shadow: -2px 0 10px rgba(0,0,0,0.1);
-            }
-
-            .navbar-menu.active {
-                right: 0;
-            }
-
-            .navbar-toggle {
-                display: flex;
-            }
-        }
-
         /* Hero Section */
         .hero {
             margin-top: 60px;
@@ -417,14 +395,6 @@
     opacity: 0.7;
 }
 
-@media (max-width: 768px) {
-    .lightbox-close {
-        top: 10px;
-        right: 20px;
-        font-size: 30px;
-    }
-}
-
         /* Core Offerings */
         .offerings {
             padding: 4rem 2rem;
@@ -528,10 +498,10 @@
         }
 
         .trust-icon {
-            color: #4caf50;
-            font-size: 1.5rem;
-            flex-shrink: 0;
-        }
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
 
         /* Testimonials */
         .testimonials {
@@ -574,14 +544,6 @@
         .testimonial-author {
             font-weight: bold;
             color: #1e3a5f;
-        }
-
-        .feedback-grid {
-            max-width: 900px;
-            margin: 3rem auto 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
         }
 
         .feedback-card {
@@ -659,12 +621,6 @@
 .slider-counter {
     color: #1e3a5f;
     font-weight: bold;
-}
-
-@media (max-width: 768px) {
-    .feedback-slide {
-        grid-template-columns: 1fr;
-    }
 }
 
         /* Milestones */
@@ -996,9 +952,42 @@
     }
 }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
+        html {
+            scroll-behavior: smooth;
+        }
+
+@media (max-width: 768px) {
+            .navbar-menu {
+                position: fixed;
+                top: 60px;
+                right: -100%;
+                flex-direction: column;
+                background: #1e3a5f;
+                width: 250px;
+                padding: 2rem;
+                transition: right 0.3s;
+                box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            }
+
+            .navbar-menu.active {
+                right: 0;
+            }
+
+            .navbar-toggle {
+                display: flex;
+            }
+
+            .lightbox-close {
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+    }
+
+            .feedback-slide {
+        grid-template-columns: 1fr;
+    }
+
+          .hero h1 {
                 font-size: 2rem;
             }
 
@@ -1016,20 +1005,11 @@
         width: 50px;
         height: 50px;
             }
-            
-        }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
-       @media (max-width: 768px) {
     .ecosystem-video {
         max-width: 100% !important;
     }
-}
 
-      @media (max-width: 768px) {
     .mission-row-1 {
         grid-template-columns: 1fr !important;
     }
@@ -1156,29 +1136,70 @@
     <div style="max-width: 1100px; margin: 0 auto;">
     <div class="mission-row-1" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 1.5rem;">
         <div style="background: #f0f4f8; border-radius: 12px; padding: 1.8rem; text-align: center; border-top: 4px solid #1e3a5f; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
-            <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">🎯</div>
+            <div style="margin-bottom: 0.8rem;">
+             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="12" r="10" stroke="#1e3a5f" stroke-width="2"/>
+    <circle cx="12" cy="12" r="6" stroke="#1e3a5f" stroke-width="2"/>
+    <circle cx="12" cy="12" r="2" fill="#b71c1c"/>
+    <line x1="12" y1="2" x2="12" y2="4" stroke="#1e3a5f" stroke-width="2" stroke-linecap="round"/>
+    <line x1="12" y1="20" x2="12" y2="22" stroke="#1e3a5f" stroke-width="2" stroke-linecap="round"/>
+    <line x1="2" y1="12" x2="4" y2="12" stroke="#1e3a5f" stroke-width="2" stroke-linecap="round"/>
+    <line x1="20" y1="12" x2="22" y2="12" stroke="#1e3a5f" stroke-width="2" stroke-linecap="round"/>
+    <line x1="14" y1="10" x2="19" y2="5" stroke="#b71c1c" stroke-width="1.8" stroke-linecap="round"/>
+    <polygon points="19,3 21,5 19,7 17,5" fill="#b71c1c"/>
+</svg>
+</div>
             <h3 style="color: #1e3a5f; margin-bottom: 0.75rem; font-size: 1.15rem;">Quality</h3>
             <p style="color: #555; font-size: 0.95rem; line-height: 1.7;">Providing accurate, well-researched, exam-oriented, and professionally designed learning resources.</p>
         </div>
         <div style="background: #f0f4f8; border-radius: 12px; padding: 1.8rem; text-align: center; border-top: 4px solid #1e3a5f; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
-            <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">🌐</div>
+            <div style="margin-bottom: 0.8rem;">
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="#1e3a5f" stroke-width="2"/>
+        <ellipse cx="12" cy="12" rx="4" ry="10" stroke="#1e3a5f" stroke-width="2"/>
+        <line x1="2" y1="9" x2="22" y2="9" stroke="#1e3a5f" stroke-width="2"/>
+        <line x1="2" y1="15" x2="22" y2="15" stroke="#1e3a5f" stroke-width="2"/>
+    </svg>
+</div>
             <h3 style="color: #1e3a5f; margin-bottom: 0.75rem; font-size: 1.15rem;">Accessibility</h3>
             <p style="color: #555; font-size: 0.95rem; line-height: 1.7;">Making learning available anytime, anywhere through digital tools, E-Books, courses, videos, and future technologies.</p>
         </div>
         <div style="background: #f0f4f8; border-radius: 12px; padding: 1.8rem; text-align: center; border-top: 4px solid #1e3a5f; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
-            <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">💰</div>
+            <div style="margin-bottom: 0.8rem;">
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="#1e3a5f" stroke-width="2"/>
+        <path d="M12 6v12" stroke="#1e3a5f" stroke-width="2" stroke-linecap="round"/>
+        <path d="M9 9h4.5a1.5 1.5 0 0 1 0 3h-3a1.5 1.5 0 0 0 0 3H15" stroke="#1e3a5f" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+</div>
             <h3 style="color: #1e3a5f; margin-bottom: 0.75rem; font-size: 1.15rem;">Affordability</h3>
             <p style="color: #555; font-size: 0.95rem; line-height: 1.7;">Reducing financial barriers so quality education remains within reach of every student.</p>
         </div>
         <div style="background: #f0f4f8; border-radius: 12px; padding: 1.8rem; text-align: center; border-top: 4px solid #1e3a5f; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
-            <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">💡</div>
+            <div style="margin-bottom: 0.8rem;">
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 21h6" stroke="#1e3a5f" stroke-width="2" stroke-linecap="round"/>
+        <path d="M9 18h6" stroke="#1e3a5f" stroke-width="2" stroke-linecap="round"/>
+        <path d="M12 2a7 7 0 0 1 7 7c0 2.8-1.6 5.2-4 6.4V18H9v-2.6C6.6 14.2 5 11.8 5 9a7 7 0 0 1 7-7z" stroke="#1e3a5f" stroke-width="2" stroke-linejoin="round"/>
+        <line x1="12" y1="6" x2="12" y2="10" stroke="#b71c1c" stroke-width="2" stroke-linecap="round"/>
+        <line x1="10" y1="8" x2="14" y2="8" stroke="#b71c1c" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+</div>
             <h3 style="color: #1e3a5f; margin-bottom: 0.75rem; font-size: 1.15rem;">Innovation</h3>
             <p style="color: #555; font-size: 0.95rem; line-height: 1.7;">Leveraging technology, digital publishing, AI tools and modern educational methods to improve learning experiences.</p>
         </div>
     </div>
     <div class="mission-row-2" style="display: flex; justify-content: center;">
         <div style="background: #f0f4f8; border-radius: 12px; padding: 1.8rem; text-align: center; border-top: 4px solid #b71c1c; transition: transform 0.3s; width: calc(25% - 0.75rem);" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
-            <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">🏆</div>
+            <div style="margin-bottom: 0.8rem;">
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 4h12v8a6 6 0 0 1-12 0V4z" stroke="#b71c1c" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M6 7H3a1 1 0 0 0-1 1v1a4 4 0 0 0 4 4" stroke="#b71c1c" stroke-width="2" stroke-linecap="round"/>
+        <path d="M18 7h3a1 1 0 0 1 1 1v1a4 4 0 0 1-4 4" stroke="#b71c1c" stroke-width="2" stroke-linecap="round"/>
+        <line x1="12" y1="18" x2="12" y2="21" stroke="#b71c1c" stroke-width="2" stroke-linecap="round"/>
+        <line x1="8" y1="21" x2="16" y2="21" stroke="#b71c1c" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+</div>
             <h3 style="color: #b71c1c; margin-bottom: 0.75rem; font-size: 1.15rem;">Student Success</h3>
             <p style="color: #555; font-size: 0.95rem; line-height: 1.7;">Focusing not merely on content delivery but on helping students achieve better academic outcomes, higher scores, and stronger conceptual understanding.</p>
         </div>
@@ -1195,19 +1216,41 @@
         <h3 style="text-align: center; font-size: 1.4rem; margin-bottom: 2rem; color: #a8c8f0;">How It Works</h3>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
             <div style="background: rgba(255,255,255,0.08); border-radius: 12px; padding: 1.8rem; text-align: center; border: 1px solid rgba(255,255,255,0.15);">
-                <div style="font-size: 2.5rem; margin-bottom: 0.8rem;">📘</div>
+                <div style="margin-bottom: 0.8rem;">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#a8c8f0" stroke-width="2" stroke-linecap="round"/>
+        <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15z" stroke="#a8c8f0" stroke-width="2" stroke-linejoin="round"/>
+        <line x1="9" y1="7" x2="15" y2="7" stroke="#a8c8f0" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="9" y1="11" x2="15" y2="11" stroke="#a8c8f0" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+</div>
                 <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #a8c8f0;">Step 1 — Learn</h4>
                 <p style="font-weight: bold; margin-bottom: 0.5rem;">Publications</p>
                 <p style="color: #ccc; font-size: 0.95rem;">Build strong concepts with simplified, exam-focused material.</p>
             </div>
            <div style="background: rgba(255,255,255,0.08); border-radius: 12px; padding: 1.8rem; text-align: center; border: 1px solid rgba(255,255,255,0.15);">
-                <div style="font-size: 2.5rem; margin-bottom: 0.8rem;">❓</div>
+                <div style="font-size: 2.5rem; margin-bottom: 0.8rem;">
+    <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="#a8c8f0" stroke-width="2"/>
+        <path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.5-1.5 2-2.5 3" stroke="#a8c8f0" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="12" cy="17" r="1" fill="#a8c8f0"/>
+    </svg>
+</div>
                 <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #a8c8f0;">Step 2 — Solve</h4>
                 <p style="font-weight: bold; margin-bottom: 0.5rem;">Doubt Solving Service</p>
                 <p style="color: #ccc; font-size: 0.95rem;">Get unstuck instantly with personalized doubt resolution.</p>
             </div>
             <div style="background: rgba(255,255,255,0.08); border-radius: 12px; padding: 1.8rem; text-align: center; border: 1px solid rgba(255,255,255,0.15);">
-                <div style="font-size: 2.5rem; margin-bottom: 0.8rem;">🧠</div>
+                <div style="font-size: 2.5rem; margin-bottom: 0.8rem;">
+    <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="4" width="18" height="17" rx="2" stroke="#a8c8f0" stroke-width="2"/>
+        <line x1="3" y1="9" x2="21" y2="9" stroke="#a8c8f0" stroke-width="2"/>
+        <line x1="8" y1="2" x2="8" y2="6" stroke="#a8c8f0" stroke-width="2" stroke-linecap="round"/>
+        <line x1="16" y1="2" x2="16" y2="6" stroke="#a8c8f0" stroke-width="2" stroke-linecap="round"/>
+        <line x1="7" y1="13" x2="17" y2="13" stroke="#a8c8f0" stroke-width="2" stroke-linecap="round"/>
+        <line x1="7" y1="17" x2="13" y2="17" stroke="#a8c8f0" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+</div>
                 <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #a8c8f0;">Step 3 — Plan</h4>
                 <p style="font-weight: bold; margin-bottom: 0.5rem;">Ediify Nexus</p>
                 <p style="color: #ccc; font-size: 0.95rem;">Turn your syllabus into a clear, structured study plan.</p>
@@ -1290,7 +1333,7 @@
                         <rect x="32" y="35" width="8" height="13" fill="#ffc107"/>
                         <rect x="42" y="40" width="8" height="8" fill="#9c27b0"/>
                     </svg>
-                    </div>
+                </div>
                 <h3>Ediify Nexus</h3>
                 <p>Automated calculators, planners, and smart trackers.</p>
                 <a href="https://ediifynexus.github.io/" target="_blank" class="offering-btn">Explore Ediify Nexus</a>
@@ -1303,31 +1346,56 @@
         <h2>Why Students Trust Ediify Concept</h2>
         <div class="trust-items">
         <div class="trust-item">
-                <div class="trust-icon">✓</div>
+                <div class="trust-icon">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+        <path d="M7 12l3.5 3.5L17 8" stroke="#4caf50" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</div>
                 <div>
                     <strong>Designed as a complete system</strong> — not scattered resources.
                 </div>
             </div>
             <div class="trust-item">
-                <div class="trust-icon">✓</div>
+                <div class="trust-icon">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+        <path d="M7 12l3.5 3.5L17 8" stroke="#4caf50" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</div>
                 <div>
                     <strong>100% student-focused:</strong> Every resource is designed with your success in mind.
                 </div>
             </div>
             <div class="trust-item">
-                <div class="trust-icon">✓</div>
+                <div class="trust-icon">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+        <path d="M7 12l3.5 3.5L17 8" stroke="#4caf50" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</div>
                 <div>
                     <strong>Backed by 350k+ views on YouTube</strong> — thousands of students across India already rely on our content.
                 </div>
             </div>
             <div class="trust-item">
-                <div class="trust-icon">✓</div>
+                <div class="trust-icon">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+        <path d="M7 12l3.5 3.5L17 8" stroke="#4caf50" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</div>
                 <div>
-                    <strong>Clear, concise, and ready-to-use resources</strong> that save you time and reduce stress.
+                    <strong>Clear, simplified, and easy-to-use resources</strong> that save you time and reduce stress.
                 </div>
             </div>
             <div class="trust-item">
-                <div class="trust-icon">✓</div>
+                <div class="trust-icon">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+        <path d="M7 12l3.5 3.5L17 8" stroke="#4caf50" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</div>
                 <div>
                     <strong>Created by someone who's been in your shoes</strong> — and won.
                 </div>
