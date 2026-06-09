@@ -3663,6 +3663,32 @@ document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeModal();
 });
 
+function preloadBookImages(card) {
+    const attrs = [
+        'data-book-img1','data-book-img2','data-book-img3','data-book-img4',
+        'data-book-img5','data-book-img6','data-book-img7','data-book-img8',
+        'data-book-img9','data-book-img10','data-book-img11','data-book-img12',
+        'data-book-img13','data-book-img14','data-book-img15','data-book-img16',
+        'data-book-img17','data-book-img18','data-book-img19','data-book-img20',
+        'data-book-img21'
+    ];
+    attrs.forEach(function(attr) {
+        const src = card.getAttribute(attr);
+        if (src && src.trim() !== '') {
+            const img = new Image();
+            img.src = src;
+        }
+    });
+}
+
+// Preload images for all book cards on page load
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.book-card[data-book-img1]').forEach(function(card) {
+        // Small delay so preloading doesn't compete with initial page render
+        setTimeout(function() { preloadBookImages(card); }, 2000);
+    });
+});
+        
 function openModalFromCard(card) {
     openModal({
         title:       card.getAttribute('data-book-title'),
