@@ -4846,8 +4846,9 @@ window.addEventListener('popstate', function(e) {
         modal.style.zIndex = '';
         _modalOpenedFromCart = false;
         document.body.style.overflow = 'hidden'; // cart still open
-        // The popstate consumed our one history entry, so push a new one for the cart
-        history.pushState({ panel: true }, '');
+        // The popstate consumed our one history entry, so push a new one for the cart.
+        // setTimeout defers until after the popstate event fully settles (required on Android Chrome).
+        setTimeout(function() { history.pushState({ panel: true }, ''); }, 0);
         // _historyPanelOpen stays true — cart still owns this entry
     } else if (modal.classList.contains('active')) {
         _historyPanelOpen = false;
