@@ -4382,8 +4382,7 @@ let galleryIndex  = 0;
 let galleryTotal  = 1;
 let galleryImages = []; // stores the valid image paths for current book
 let modalBuyUrl   = '';
-let _modalOpenedFromCart = false;
-
+    
 function openModal(bookData) {
     const overlay  = document.getElementById('bookModal');
     const waText   = bookData.form === 'ebook'
@@ -4785,6 +4784,8 @@ function renderCartBody() {
 }
 
 // ── Open modal from inside cart ──
+    let _modalOpenedFromCart = false;
+    
 function openModalFromCart(itemId) {
     const items = cartLoad();
     const item = items.find(function(i) { return i.id === itemId; });
