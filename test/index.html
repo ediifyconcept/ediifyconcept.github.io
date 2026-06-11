@@ -4846,7 +4846,9 @@ window.addEventListener('popstate', function(e) {
         modal.style.zIndex = '';
         _modalOpenedFromCart = false;
         document.body.style.overflow = 'hidden'; // cart still open
-        // history entry (cart's) stays — don't touch _historyPanelOpen
+        // The popstate consumed our one history entry, so push a new one for the cart
+        history.pushState({ panel: true }, '');
+        // _historyPanelOpen stays true — cart still owns this entry
     } else if (modal.classList.contains('active')) {
         _historyPanelOpen = false;
         modal.classList.remove('active');
