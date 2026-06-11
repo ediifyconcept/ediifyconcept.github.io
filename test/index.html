@@ -4413,7 +4413,14 @@ function openModal(bookData) {
         img.removeAttribute('src');
         if (galleryImages[i]) {
             img.setAttribute('data-src', galleryImages[i]);
-            img.src = galleryImages[i]; // start fetching immediately
+            if (i === 0) {
+                img.src = galleryImages[i]; // image 1 loads immediately
+            } else {
+                // slight delay so image 1 gets bandwidth priority
+                (function(imgEl, src) {
+                    setTimeout(function() { imgEl.src = src; }, 300);
+                })(img, galleryImages[i]);
+            }
         } else {
             img.removeAttribute('data-src');
             img.removeAttribute('src');
