@@ -1,0 +1,101 @@
+BOOK ID REFERENCE (use these in STORE_BADGES / excludeIds)
+Use 'id' for both formats, or 'id@printed' / 'id@ebook' for one format.
+
+icse10-engbundle           ebook    bundle      ₹649    ICSE Class 10 English E–Books (Language + Literature) Bundle
+icse10-engbundle           printed  bundle      ₹1479   ICSE Class 10 English Printed Books (Language + Literature) Bundle
+icse10-englit              ebook    individual  ₹599    ICSE Class 10 English Literature Analysis (Digital Edition)
+icse10-englit              printed  individual  ₹1299   ICSE Class 10 English Literature Analysis
+icse10-englit-jc           ebook    individual  ₹274    ICSE Class 10 English Literature (Julius Caesar) Analysis (Digital Edition)
+icse10-englit-jc           printed  individual  ₹649    ICSE Class 10 English Literature (Julius Caesar) Analysis
+icse10-englit-tc           ebook    individual  ₹399    ICSE Class 10 English Literature (Treasure Chest) Analysis (Digital Edition)
+icse10-englit-tc           printed  individual  ₹899    ICSE Class 10 English Literature (Treasure Chest) Analysis
+icse10-geo                 ebook    individual  ₹000    ICSE Class 10 Geography Simplified (Digital Edition)
+icse10-geo                 printed  individual  ₹000    ICSE Class 10 Geography Simplified
+icse10-his/civics          ebook    individual  ₹329    ICSE Class 10 History/Civics Simplified (Digital Edition)
+icse10-his/civics          printed  individual  ₹749    ICSE Class 10 History/Civics Simplified
+icse10-hs                  ebook    individual  ₹249    ICSE Class 10 Home Science Simplified (Digital Edition)
+icse10-hs                  printed  individual  ₹599    ICSE Class 10 Home Science Simplified
+icse10-math                ebook    individual  ₹649    ICSE Class 10 Mathematics Simplified (Digital Edition)
+icse10-math                printed  individual  ₹1399   ICSE Class 10 Mathematics Simplified
+icse10-sb                  ebook    individual  ₹169    ICSE Class 10 95%+ Success Blueprint (Digital Edition)
+icse10-sb                  printed  individual  ₹419    ICSE Class 10 95%+ Success Blueprint
+icse10-socialbundle        ebook    bundle      ₹000    ICSE Class 10 Social Studies E–Books (History/Civics + Geography) Bundle
+icse10-socialbundle        printed  bundle      ₹000    ICSE Class 10 Social Studies Printed Books (History/Civics + Geography) Bundle
+icse9&10-englang           ebook    individual  ₹129    ICSE Class 9 &amp; 10 English Language Reference (Digital Edition)
+icse9&10-englang           printed  individual  ₹349    ICSE Class 9 &amp; 10 English Language Reference
+icse9-engbundle            ebook    bundle      ₹649    ICSE Class 9 English E–Books (Language + Literature) Bundle
+icse9-englit               ebook    individual  ₹599    ICSE Class 9 English Literature Analysis (Digital Edition)
+icse9-englit               printed  individual  ₹1299   ICSE Class 9 English Literature Analysis
+icse9-englit-jc            ebook    individual  ₹174    ICSE Class 9 English Literature (Julius Caesar) Analysis (Digital Edition)
+icse9-englit-jc            printed  individual  ₹449    ICSE Class 9 English Literature (Julius Caesar) Analysis
+icse9-englit-tc            ebook    individual  ₹499    ICSE Class 9 English Literature (Treasure Chest) Analysis (Digital Edition)
+icse9-englit-tc            printed  individual  ₹1099   ICSE Class 9 English Literature (Treasure Chest) Analysis
+isc11&12-englang           ebook    individual  ₹129    ISC Class 11 &amp; 12 English Language Reference (Digital Edition)
+isc11&12-englang           printed  individual  ₹359    ISC Class 11 &amp; 12 English Language Reference
+isc11&12-hindilit          ebook    individual  ₹99     ISC Class 11 &amp; 12 Hindi Literature Handwritten Notes
+isc11-englit               ebook    individual  ₹549    ISC Class 11 English Literature Analysis (Digital Edition)
+isc11-englit               printed  individual  ₹1199   ISC Class 11 English Literature Analysis
+isc11-englit-mb            ebook    individual  ₹149    ISC Class 11 English Literature (Macbeth) Analysis (Digital Edition)
+isc11-englit-mb            printed  individual  ₹399    ISC Class 11 English Literature (Macbeth) Analysis
+isc11-englit-pr            ebook    individual  ₹449    ISC Class 11 English Literature (Prism & Rhapsody) Analysis (Digital Edition)
+isc11-englit-pr            printed  individual  ₹999    ISC Class 11 English Literature (Prism & Rhapsody) Analysis
+isc11-engmodbundle         ebook    bundle      ₹499    ISC Class 11 English E–Books (Language + Modern English) Bundle
+isc11-engmodbundle         printed  bundle      ₹1199   ISC Class 11 English Printed Books (Language + Modern English) Bundle
+isc11-moderneng            ebook    individual  ₹449    ISC Class 11 Modern English Analysis (Digital Edition)
+isc11-moderneng            printed  individual  ₹999    ISC Class 11 Modern English Analysis
+isc11-moderneng-pr         ebook    individual  ₹449    ISC Class 11 Modern English (Perspectives & Reflections) Analysis (Digital Edition)
+isc11-moderneng-pr         printed  individual  ₹999    ISC Class 11 Modern English (Perspectives & Reflections) Analysis
+isc11-moderneng-pyg        ebook    individual  ₹74     ISC Class 11 Modern English (Pygmalion) Analysis (Digital Edition)
+isc11-moderneng-pyg        printed  individual  ₹249    ISC Class 11 Modern English (Pygmalion) Analysis
+isc11-polsci               ebook    individual  ₹99     ISC Class 11 Political Science Handwritten Notes
+isc12-eco-p1               ebook    individual  ₹779    ISC Class 12 Economics Simplified (Part I) (Digital Edition)
+isc12-eco-p1               printed  individual  ₹1649   ISC Class 12 Economics Simplified (Part I)
+isc12-eco-p2               ebook    individual  ₹729    ISC Class 12 Economics Simplified (Part II) (Digital Edition)
+isc12-eco-p2               printed  individual  ₹1549   ISC Class 12 Economics Simplified (Part II)
+isc12-ecobundle            ebook    bundle      ₹1129   ISC Class 12 Economics E–Books (Part I + Part II) Bundle
+isc12-ecobundle            printed  bundle      ₹2399   ISC Class 12 Economics Printed Books (Part I + Part II) Bundle
+isc12-engbundle            ebook    bundle      ₹599    ISC Class 12 English E–Books (Language + Literature) Bundle
+isc12-engbundle            printed  bundle      ₹1399   ISC Class 12 English Printed Books (Language + Literature) Bundle
+isc12-englang-project      ebook    individual  ₹29     ISC Class 12 English Language Project Sample
+isc12-englit               ebook    individual  ₹549    ISC Class 12 English Literature Analysis (Digital Edition)
+isc12-englit               printed  individual  ₹1199   ISC Class 12 English Literature Analysis
+isc12-englit-mb            ebook    individual  ₹274    ISC Class 12 English Literature (Macbeth) Analysis (Digital Edition)
+isc12-englit-mb            printed  individual  ₹649    ISC Class 12 English Literature (Macbeth) Analysis
+isc12-englit-pr            ebook    individual  ₹349    ISC Class 12 English Literature (Prism & Rhapsody) Analysis (Digital Edition)
+isc12-englit-pr            printed  individual  ₹799    ISC Class 12 English Literature (Prism & Rhapsody) Analysis
+isc12-englit-project       ebook    individual  ₹39     ISC Class 12 English Literature Project Sample
+isc12-engmodbundle         ebook    bundle      ₹749    ISC Class 12 English E–Books (Language + Modern English) Bundle
+isc12-engmodbundle         printed  bundle      ₹1649   ISC Class 12 English Printed Books (Language + Modern English) Bundle
+isc12-engprojectbundle     ebook    bundle      ₹49     ISC Class 12 English Project Samples (Language + Literature) Bundle
+isc12-geo-p1               ebook    individual  ₹629    ISC Class 12 Geography Simplified (Part I) (Digital Edition)
+isc12-geo-p1               printed  individual  ₹1349   ISC Class 12 Geography Simplified (Part I)
+isc12-geo-p2               ebook    individual  ₹529    ISC Class 12 Geography Simplified (Part II) (Digital Edition)
+isc12-geo-p2               printed  individual  ₹1149   ISC Class 12 Geography Simplified (Part II)
+isc12-geobundle            ebook    bundle      ₹849    ISC Class 12 Geography E–Books (Part I + Part II) Bundle
+isc12-geobundle            printed  bundle      ₹1879   ISC Class 12 Geography Printed Books (Part I + Part II) Bundle
+isc12-hindi-project        ebook    individual  ₹39     ISC Class 12 Hindi Project Sample
+isc12-his                  ebook    individual  ₹449    ISC Class 12 History Simplified (Digital Edition)
+isc12-his                  printed  individual  ₹999    ISC Class 12 History Simplified
+isc12-his-project          ebook    individual  ₹49     ISC Class 12 History Project Sample
+isc12-hs                   ebook    individual  ₹429    ISC Class 12 Home Science Simplified (Digital Edition)
+isc12-hs                   printed  individual  ₹949    ISC Class 12 Home Science Simplified
+isc12-moderneng            ebook    individual  ₹699    ISC Class 12 Modern English Analysis (Digital Edition)
+isc12-moderneng            printed  individual  ₹1499   ISC Class 12 Modern English Analysis
+isc12-moderneng-pr         ebook    individual  ₹449    ISC Class 12 Modern English (Perspectives & Reflections) Analysis (Digital Edition)
+isc12-moderneng-pr         printed  individual  ₹999    ISC Class 12 Modern English (Perspectives & Reflections) Analysis
+isc12-moderneng-pyg        ebook    individual  ₹274    ISC Class 12 Modern English (Pygmalion) Analysis (Digital Edition)
+isc12-moderneng-pyg        printed  individual  ₹649    ISC Class 12 Modern English (Pygmalion) Analysis
+isc12-phyedu               ebook    individual  ₹000    ISC Class 12 Physical Education Simplified (Digital Edition)
+isc12-phyedu               printed  individual  ₹000    ISC Class 12 Physical Education Simplified
+isc12-polsci               ebook    individual  ₹449    ISC Class 12 Political Science Simplified (Digital Edition)
+isc12-polsci               printed  individual  ₹999    ISC Class 12 Political Science Simplified
+isc12-polsci-project       ebook    individual  ₹49     ISC Class 12 Political Science Project Sample
+isc12-psych                ebook    individual  ₹499    ISC Class 12 Psychology Simplified (Digital Edition)
+isc12-psych                printed  individual  ₹1099   ISC Class 12 Psychology Simplified
+isc12-psych-attitude-project ebook    individual  ₹59     ISC Class 12 Psychology Project Sample (Attitude)
+isc12-psych-stress-project ebook    individual  ₹59     ISC Class 12 Psychology Project Sample (Stress)
+isc12-psychprojectbundle   ebook    bundle      ₹89     ISC Class 12 Psychology Project Samples (Attitude + Stress) Bundle
+isc12-soc                  ebook    individual  ₹379    ISC Class 12 Sociology Simplified (Digital Edition)
+isc12-soc                  printed  individual  ₹849    ISC Class 12 Sociology Simplified
+isc12h-sb                  ebook    individual  ₹179    ISC Class 12 Humanities 95%+ Success Blueprint (Digital Edition)
+isc12h-sb                  printed  individual  ₹449    ISC Class 12 Humanities 95%+ Success Blueprint
