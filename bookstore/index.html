@@ -5704,13 +5704,13 @@ margin-top: 2rem;
    banner) switches automatically.                                            */
 const STORE_DISCOUNT = {
 
-    enabled: false,          // true = discount ON, false = discount OFF
+    enabled: true,          // true = discount ON, false = discount OFF
     percent: 30,            // discount percentage (e.g. 30 = 30% off)
 
     // Optional schedule (leave '' for no schedule). Format: 'YYYY-MM-DD'.
     // The discount switches on/off automatically using the visitor's date.
-    startDate: '',          // e.g. '2026-10-10'  → discount starts on this day
-    endDate:   '',          // e.g. '2026-10-31'  → last day of the discount (inclusive)
+    startDate: '2026-10-14',          // e.g. '2026-10-10'  → discount starts on this day
+    endDate:   '2026-11-13',          // e.g. '2026-10-31'  → last day of the discount (inclusive)
 
     // WHICH publications get the discount ('*' means "all")
     categories: ['syllabus'],            // 'syllabus', 'topper', 'project'   (e.g. ['syllabus','topper'])
